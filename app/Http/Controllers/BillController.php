@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Bill\CreateBill;
 use App\Http\Controllers\Bill\ShowCreateBill;
+use App\Services\WebServiceSunat;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Contracts\ControllerDispatcher;
 
@@ -15,8 +16,9 @@ class BillController extends Controller
     public function store(Request $request){
         (new CreateBill())->store($request);
     }
-    public function create(Request $request): \Inertia\Response
+    public function create(Request $request,WebServiceSunat $sunat): \Inertia\Response
     {
+
         return (new ShowCreateBill)->index($request);
     }
     public function show(){

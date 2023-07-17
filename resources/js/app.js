@@ -1,4 +1,5 @@
 import './bootstrap';
+import "carbon-components-svelte/css/all.css";
 import { createInertiaApp } from '@inertiajs/svelte'
 
 createInertiaApp({
