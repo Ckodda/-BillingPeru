@@ -23,8 +23,8 @@
   
   <Header
     persistentHamburgerMenu={true}
-    company="IBM"
-    platformName="Carbon Svelte"
+    company="KOUDDA"
+    platformName="Billing Peru"
     bind:isSideNavOpen
   >
     <svelte:fragment slot="skip-to-content">
